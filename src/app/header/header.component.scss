@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 0.1rem solid #ed3237;
+    font-size: 1.6rem;
+}
+.logo{
+    color: #ed3237;
+}
+.container a, .container li{
+    position: relative;
+}
+.container a::after,
+.container li::after{
+    content: "";
+    width: 0%;
+    height: 0.1rem;
+    background-color: #ed3237;
+    display: block;
+    margin: 0;
+    position: absolute;
+    transition: 0.4s all;
+}
+.container a:hover::after,
+.container li:hover::after{
+    width: 100%;
+}

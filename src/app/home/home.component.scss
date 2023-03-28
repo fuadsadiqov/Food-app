@@ -1,0 +1,51 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+ul li a{
+    height: 24rem;
+    width: 20rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #ed3237;
+}
+ul li a .content{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+ul li a .content .name{
+    display: flex;
+    justify-content: space-between;
+}
+ul li a .food-favorite{
+    font-size: 2rem;
+}
+ul li a img{
+    height: 12rem;
+    object-fit: cover;
+}
+ul li a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+ul li a .content .product-item-footer .origins{
+    text-transform: capitalize;
+    margin: 0.3rem 0;
+    font-size: 1.3rem;
+    color: #ddd;
+}
+ul li a .content .product-item-footer .cook-time{
+    font-size: 1.4rem;
+}
+ul li a .content .product-item-footer .price{
+    margin-top: 0.4rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #414141;
+}
