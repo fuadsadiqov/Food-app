@@ -16,10 +16,11 @@ export class HomeComponent implements OnInit{
   
     ngOnInit(): void {
     this.route.params.subscribe(param => {
-      if(param['searchTerm']){
-        console.log(param);
-        this.foods = this.foodService.getAll().filter(food => 
-          food.name.toLowerCase().includes(param['searchTerm'].toLowerCase()))
+      if(param['searchTerm']){ 
+        this.foods = this.foodService.getAllFoodsBySearchTerm(param['searchTerm'])
+      }
+      else if(param['tag']){
+        this.foods = this.foodService.getFoodsByTag(param['tag'])
       }
       else{
         this.foods = this.foodService.getAll()
