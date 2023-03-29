@@ -12,7 +12,7 @@ export class FoodService {
     return [
       {
         id: 1,
-        name: 'Vegan salad',
+        name: 'Salad',
         cookTime: '3-5',
         price: 5,
         favorite: false,
