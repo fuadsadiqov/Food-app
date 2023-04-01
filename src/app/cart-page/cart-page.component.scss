@@ -27,6 +27,14 @@
             .price{
                 font-size: 1.5rem;
             }
+            .quantity{
+                input{
+                    width: 4rem;
+                    overflow-x: hidden;
+                    border: none;
+                    font-size: 1.5rem;
+                }
+            }
             .remove-btn{
                 background-color: #ed3237;
                 color: #FFF;

@@ -4,3 +4,22 @@
     text-align: center;
     margin-top: 2rem;
 }
+div{
+    display: flex;
+    justify-content: center;
+    .goTo{
+        font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(87, 87, 247);
+    display: inline-block;
+    margin-top: 1.5rem;
+    border: 1px solid rgb(87, 87, 247);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    &:hover{
+        background-color: rgb(87, 87, 247);
+        color: #FFF;
+    }
+}
+}

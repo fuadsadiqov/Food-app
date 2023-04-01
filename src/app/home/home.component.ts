@@ -25,6 +25,7 @@ export class HomeComponent implements OnInit{
       else{
         this.foods = this.foodService.getAll()
       }
+      console.log(this.foods);
     })
   }
 
